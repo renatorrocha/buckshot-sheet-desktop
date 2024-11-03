@@ -1,3 +1,3 @@
 export default function App() {
-    return <div>App</div>;
+    return <div className="text-red-800 font-bold">App</div>;
 }
