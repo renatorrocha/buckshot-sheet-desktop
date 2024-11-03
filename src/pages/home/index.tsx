@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import { NAVIGATION_OPTIONS } from "../../utils/constants";
+import { invoke } from "@tauri-apps/api/core";
 
 export default function Home() {
+    async function handleExitBtn() {
+        await invoke("quit_app");
+    }
+
     return (
         <div className="flex flex-col items-center justify-center h-full gap-2">
             <h1 className="text-3xl font-black text-center text-white uppercase sm:text-6xl h-fit text-stroke-2 ">
@@ -16,7 +21,7 @@ export default function Home() {
                 A sheet for Mike Klubnika's game
             </p>
 
-            <section className="flex flex-col mt-4 text-3xl text-center uppercase sm:gap-4 ">
+            <section className="flex flex-col gap-1 mt-4 text-3xl text-center uppercase">
                 {NAVIGATION_OPTIONS.map((option) => (
                     <Link
                         key={option.label}
@@ -29,6 +34,7 @@ export default function Home() {
 
                 <button
                     type="button"
+                    onClick={handleExitBtn}
                     className="uppercase scale-y-125 cursor-pointer hover:text-white/40"
                 >
                     exit

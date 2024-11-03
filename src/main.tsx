@@ -9,10 +9,8 @@ import Credits from "./pages/credits";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <React.StrictMode>
         <BrowserRouter>
-            <main className="h-screen ">
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
+            <main className="h-screen">
+                <Link to="/">Home</Link>
 
                 <Routes>
                     <Route path="/" element={<Home />} />
