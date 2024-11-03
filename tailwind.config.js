@@ -14,6 +14,27 @@ export default {
                 white: "#dbdbd9",
                 brand: {
                     black: "#010000",
+                    "dark-gray": "#252423",
+                    gray: "#484948",
+                    olive: {
+                        700: "#4a4927",
+                        500: "#6f6e4b",
+                        300: "#92936f",
+                    },
+                    "dark-red": "#240001",
+                    burgundy: "#492520",
+                    taupe: "#6a4945",
+                    dusty: {
+                        rose: "#936c6c",
+                    },
+                    light: {
+                        rose: "#b59392",
+                    },
+                    "soft-red": "#b76d6e",
+                    purple: "#91486d",
+                    "deep-purple": "#472246",
+                    "golden-brown": "#b7936a",
+                    beige: "#d8b78e",
                 },
             },
         },
