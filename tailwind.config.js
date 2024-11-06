@@ -21,6 +21,7 @@ export default {
                         500: "#6f6e4b",
                         300: "#92936f",
                     },
+                    green: "#00e26e",
                     "dark-red": "#240001",
                     burgundy: "#492520",
                     taupe: "#6a4945",
