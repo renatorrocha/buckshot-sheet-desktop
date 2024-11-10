@@ -8,8 +8,10 @@ import Credits from "./pages/credits";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <React.StrictMode>
+        <span className="scanlines" />
+
         <BrowserRouter>
-            <main className="h-screen">
+            <main className="h-screen bg-brand-black">
                 <Link to="/">Home</Link>
 
                 <Routes>
